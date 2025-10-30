@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Molon TechStore — Início</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="Molon TechStore">
+        <a href="index.html" class="logo">Molon <span>TechStore</span></a>
+      </div>
+
+      <button class="btn-hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho">
+          🛒 <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section class="banner" role="region" aria-label="Destaque principal">
+      <div class="container">
+        <div class="banner-content">
+          <h1>Bem-vindo à Molon TechStore</h1>
+          <p>Os melhores eletrônicos — celulares, computadores, fones, TVs e muito mais.</p>
+          <a class="btn primary" href="produtos.html">Ver ofertas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="destaques container" aria-labelledby="destaques-title">
+      <h2 id="destaques-title">Destaques da semana</h2>
+
+      <div class="grid produtos-grid" role="list">
+        <!-- Produto 1 -->
+        <article class="card produto" role="listitem" data-id="p1" data-name="Smartphone Galaxy X" data-price="2199.00">
+          <img src="imagens/celular.jpg" alt="Smartphone Galaxy X — frontal" />
+          <div class="card-body">
+            <h3>Smartphone Galaxy X</h3>
+            <p class="price">R$ 2.199,00</p>
+            <div class="card-actions">
+              <button class="btn add-cart" aria-label="Adicionar Smartphone Galaxy X ao carrinho">Adicionar ao carrinho</button>
+              <a class="link-more" href="produtos.html">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="card produto" role="listitem" data-id="p2" data-name="Fone Bluetooth Pro" data-price="349.00">
+          <img src="imagens/fone.jpg" alt="Fone Bluetooth Pro" />
+          <div class="card-body">
+            <h3>Fone Bluetooth Pro</h3>
+            <p class="price">R$ 349,00</p>
+            <div class="card-actions">
+              <button class="btn add-cart" aria-label="Adicionar Fone Bluetooth Pro ao carrinho">Adicionar ao carrinho</button>
+              <a class="link-more" href="produtos.html">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="card produto" role="listitem" data-id="p3" data-name="Smart TV 50''" data-price="3499.00">
+          <img src="imagens/tv.jpg" alt="Smart TV 50 polegadas" />
+          <div class="card-body">
+            <h3>Smart TV 50"</h3>
+            <p class="price">R$ 3.499,00</p>
+            <div class="card-actions">
+              <button class="btn add-cart" aria-label="Adicionar Smart TV 50 ao carrinho">Adicionar ao carrinho</button>
+              <a class="link-more" href="produtos.html">Ver</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Rodapé rápido / info -->
+    <section class="info container" aria-label="Informações rápidas">
+      <div class="info-grid">
+        <div>
+          <h4>Frete rápido</h4>
+          <p>Envio para todo o Brasil com rastreamento.</p>
+        </div>
+        <div>
+          <h4>Garantia</h4>
+          <p>Garantia mínima de 6 meses em produtos selecionados.</p>
+        </div>
+        <div>
+          <h4>Suporte</h4>
+          <p>Atendimento via e-mail e WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Molon TechStore — Todos os direitos reservados</p>
+      <p><a href="mailto:contato@molontechstore.com">contato@molontechstore.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+<div id="mini-cart" class="mini-cart hidden" aria-live="polite">
+  <p>🛒 <span id="mini-cart-count">0</span> itens - Total: <strong id="mini-cart-total">R$ 0,00</strong></p>
+  <a href="carrinho.html" class="btn">Ver Carrinho</a>
+</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>Molon <span>TechStore</span></h2>
+        <p>Loja de eletrônicos, celulares, computadores e acessórios.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Email: suporte@molontechstore.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Molon TechStore — Todos os direitos reservados</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

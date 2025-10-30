@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molon TechStore — Carrinho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="logo" href="index.html">Molon <span>TechStore</span></a>
+      </div>
+      <button class="btn-hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" class="nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="carrinho.html" class="cart-link">🛒 <span id="cart-count" class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Meu Carrinho</h1>
+
+    <section class="cart-section" aria-labelledby="cart-title">
+      <table class="cart-table" id="cart-table">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>Remover</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <!-- Itens do carrinho serão adicionados aqui via JS -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>Total do carrinho: <strong id="cart-total">R$ 0,00</strong></p>
+        <button class="btn primary" id="checkout-btn">Finalizar Compra</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Molon TechStore — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

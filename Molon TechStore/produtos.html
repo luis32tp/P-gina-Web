@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Molon TechStore — Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a class="logo" href="index.html">Molon <span>TechStore</span></a></div>
+      <button class="btn-hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" class="nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html" aria-current="page">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="carrinho.html" class="cart-link">🛒 <span id="cart-count" class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Todos os produtos</h1>
+
+    <!-- Barra de busca e filtro -->
+    <div class="filter-bar">
+      <input id="search" type="search" placeholder="Pesquisar..." aria-label="Pesquisar produtos">
+      <select id="category">
+        <option value="">Todas as categorias</option>
+        <option value="celulares">Celulares</option>
+        <option value="computadores">Computadores</option>
+        <option value="acessorios">Acessórios</option>
+        <option value="tvs">TVs</option>
+      </select>
+    </div>
+
+    <!-- Grid de produtos -->
+    <section class="produtos-grid grid" id="products-list" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Molon TechStore — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <div class="produtos-container">
+  <!-- Filtros laterais -->
+  <aside class="filtros-lateral">
+    <h3>Filtrar Produtos</h3>
+    <input id="search" type="search" placeholder="Pesquisar..." aria-label="Pesquisar produtos">
+    <h4>Categorias</h4>
+    <ul>
+      <li><button class="filter-btn" data-category="">Todas</button></li>
+      <li><button class="filter-btn" data-category="celulares">Celulares</button></li>
+      <li><button class="filter-btn" data-category="computadores">Computadores</button></li>
+      <li><button class="filter-btn" data-category="acessorios">Acessórios</button></li>
+      <li><button class="filter-btn" data-category="tvs">TVs</button></li>
+    </ul>
+  </aside>
+
+  <!-- Grid de produtos -->
+  <section class="produtos-grid grid" id="products-list"></section>
+</div>
+
+<!-- Modal de visualização rápida -->
+<div id="modal-produto" class="modal hidden" aria-hidden="true">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h3 id="modal-name"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-desc">Descrição detalhada do produto aqui.</p>
+    <button id="modal-add-cart" class="btn">Adicionar ao carrinho</button>
+  </div>
+</div>
+
+</body>
+</html>
